@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Para agregar un favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>HTML</title>
+
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    
+    <!-- Clase 1 -->
+    <h1>Parrafos:</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Cupiditate illo dolore distinctio, cum magni iste, nobis nostrum accusantium explicabo rem aliquam quos, <br>
+        earum deserunt nisi magnam molestias cumque officia quidem.</p>
+
+    <pre>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quasi ex corporis, 
+        explicabo nihil dolorum alias deleniti optio possimus aspernatur omnis incidunt, c
+        upiditate non obcaecati illum quisquam 
+        
+        veritatis odit earum!</pre>
+
+    <hr>
+    
+    <!-- Clase 2 -->
+    <h1 style="text-align: center;">Estilos en linea:</h1>
+
+    <p style="font-family: 'Trebuchet MS';">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, sit error! 
+        Autem repellendus sapiente quo. Est enim expedita labore similique accusantium, 
+        quo velit aut quasi earum ipsam blanditiis, cupiditate natus?</p>
+
+    <hr>
+
+    <!-- Clase 3 -->
+    <h1>Formateo de texto:</h1>
+
+    <p>Ponemos el nombre <b>Juan</b> en negrita</p>
+    <p>Ponemos el nombre <i>Juan</i> en italica</p>
+    <p>Ponemos el nombre <strong>Juan</strong> en strong, la muestra negrita y le da mayor valor semantico</p>
+    <p>Ponemos el nombre <em>Juan</em> en em, la muestra en italica y tiene mayor valor semantico</p>
+    <p>Ponemos el nombre <small>Juan</small> chiquito</p>
+    <p>Ponemos el nombre <del>Juan</del> tachado</p>
+    <p>Ponemos el nombre <ins>Juan</ins> subrayado</p>
+    <p>Ponemos subindices como H<sub>2</sub>O</p>
+    <p>Ponemos sobreindices como X<sup>2</sup></p>
+    <p>Ponemos el nombre <mark>Juan</mark> marcado</p>
+
+    <hr>
+
+    <!-- Clase 4 -->
+    <h1>Quotes: Citas y Referencias</h1>
+
+    <p>Ponemos un <q>texto citado</q> entre comillas desde el HTML</p>
+
+    <p>Podemos mediante un pop-up explicar un abreviatura como <abbr title="HyperText Markup Lenguage">HTML</abbr></p>    
+
+    <p>Para que semanticamente sepa que es un remitente se usa la etiqueta adress</p>
+    <address>
+        Escrito por Juan Cavallieri <br>
+        Mar del Plata, Buenos Aires, <br>
+        Argentina
+    </address>
+
+    <p>Ponemos el nombre de la pelicula <cite>Star Wars</cite> citado semanticamente</p>
+
+    <p>Con la etiqueta bdo damos vuelta un texto:</p>
+    <bdo dir="rtl">Este texto saldra al reves</bdo>
+
+    <hr>
+
+    <h1>Links:</h1>
+
+    <p>URL ABSOLUTA: nos servira para visitar webs externas - Con target _blanck se abre otra pestania </p>
+    <a href="http://www.google.com.ar">Google</a>
+
+    <p>URL RELATIVA: navega desde la carpeta donde estamos parados</p>
+    <a href="carpeta-interna/archivo-interno.html">Ir a archivo interno</a>
+
+    <p>MAILTO para enviar emails</p>
+    <a href="mailto:juancavallieri@gmail.com">Enviar Mail</a>
+
+    <p>Para que una imagen sea un link</p>
+    <a href="http://www.google.com.ar">
+        <img src="https://pbs.twimg.com/profile_images/1311763847775125516/mvBRhlDs_400x400.jpg" width="200px">
+    </a>
+
+    <p>Podemos hacer un enlace dentro de la palabra <a href="carpeta-interna/archivo-interno.html">AQUI</a></p>
+
+    <hr>
+
+    <h1>Tablas en HTML</h1>
+
+    <table>
+        <!-- Cambio el color de la columna 1 -->
+        <colgroup>
+            <col span="1" style="background-color: aquamarine;">
+        </colgroup>
+        <!-- Table Row -->
+        <tr>
+            <!-- Table Header -->
+            <th>Alumnos</th>
+            <!-- Con colspan indico que quiero que ocupe dos columnas -->
+            <th colspan="2">Nombre y Apellido</th>
+            <th>Notas</th>
+        </tr>
+        <tr>
+            <!-- Table Data -->
+            <th>1</td>
+            <td>Pedro</td>
+            <td>Perez</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <!-- Table Data -->
+            <th>2</td>
+            <td>Rodrigo</td>
+            <!-- Con rowspan indico que quiero que ocupe dos filas -->
+            <td rowspan="2">Gonzalez</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <!-- Table Data -->
+            <th>3</td>
+            <td>Cecilia</td>
+            <td>8</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>Listas en HTML</h1>
+
+    <h2>Listas Desordenadas</h2>
+
+    <h4>Comidas que me gustan</h4>
+    <!-- Unordered List -->
+    <ul>
+        <li>Tacos Mexicanos</li> <!-- ELEMENTO de la lista -->
+        <li>Arepas Colombianas</li> <!-- ELEMENTO de la lista -->
+        <li>Asado Argentino</li> <!-- ELEMENTO de la lista -->
+    </ul>
+
+    <h2>Listas Ordenadas</h2>
+
+    <h4>Actividades durante el dia</h4>
+    <!-- Ordered List -->
+    <ol>
+        <li>Levantamos</li>
+        <li>Desayunamos</li>
+        <li>Trabajamos</li>
+        <li>Dormimos</li>
+    </ol>
+
+    <h2>Modificadores para Ordered Lists</h2>
+
+    <!-- Numericos (1), Alfabetico (A), Numerica Romana (I) -->
+    <ol type="A">
+        <li>Levantamos</li>
+        <li>Desayunamos</li>
+        <li>Trabajamos</li>
+        <li>Dormimos</li>
+    </ol>
+
+    <!-- Elegimos de que numero comenzar la lista -->
+    <ol start="20">
+        <li>Levantamos</li>
+        <li>Desayunamos</li>
+        <li>Trabajamos</li>
+        <li>Dormimos</li>
+    </ol>
+
+    <h2>Modificadores para Unordered Lists</h2>
+
+    <!-- Disc, Circle, Square, None -->
+    <ul type="Circle">
+        <li>Tacos Mexicanos</li>
+        <li>Arepas Colombianas</li> 
+        <li>Asado Argentino</li> 
+    </ul>
+
+    <h2>Listas Anidadas</h2>
+
+    <ul>
+        <li>Recordar para el viaje:
+            <ol>
+                <li>DNI</li>
+                <li>Pasajes</li>
+            </ol>
+        </li>
+        <li>Asistencia al viajero</li>
+        <li>Cargador celu</li>
+    </ul>
+
+    <hr>
+
+    <h1>DIV y SPAN</h1>
+
+    <!-- El DIV ocupa toda la pantalla (es BLOCK) - El SPAN ocupa solo su longitud (inline) -->
+    <div style="background-color: chocolate; color: white;">
+        <h2>Titulo de un tema</h2>
+        <p>Parrafo sobre ese tema</p>
+        <span style="background-color: aqua;">Esta informacion es relevante</span>
+    </div>
+
+    <div style="background-color: cornflowerblue; color: white;">
+        <h2>Otro tema</h2>
+        <p>Parrafo sobre otro tema</p>
+    </div>
+
+    <hr>
+
+    <h1>Formularios:</h1>
+
+    <!-- 
+    Con method GET, la informacion se envia en la URL
+    Con method POST se envia en el body y puede ser capturado en el backend -->
+    <form method="post">
+        <!-- INPUT TYPE TEXT -->
+        <h4>Datos Personales:</h4><br>
+        <!-- El atributo NAME es importante para que se envie en cualquiera de los dos metodos.
+        El atributo ID es importante para el label
+        El atributo VALUE es importante ya que es el valor que va a tomar cuando seleccione y quiera enviar -->
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido">
+        <br>
+        <!-- INPUT RADIO BUTTON -->
+        <h4>Situacion laboral</h4><br>
+        <label for="empleado">Empleado</label>
+        <input type="radio" name="situacion-laboral" id="empleado" value="empleado">
+        <label for="desempleado">Desempleado</label>
+        <input type="radio" name="situacion-laboral" id="desempleado" value="desempleado">
+        <label for="empleado">En busqueda activa</label>
+        <input type="radio" name="situacion-laboral" id="busqueda" value="busqueda-activa">
+        <!-- INPUT TYPE CHECKBOX -->
+        <h4>Tecnologias que manejas</h4>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="tecnologias" id="html" value="html"> <!-- El VALUE se utiliza segun lo que necesito -->
+        <label for="css">CSS</label>
+        <input type="checkbox" name="tecnologias" id="css" value="css">
+        <label for="javascript">JAVASCRIPT</label>
+        <input type="checkbox" name="tecnologias" id="javascript" value="javascript">
+        <label for="react">REACT</label>
+        <input type="checkbox" name="tecnologias" id="react" value="react">
+        <!-- TEXTAREA -->
+         <br>
+        <label for="motivo">Motivo:</label>
+        <br>
+        <textarea name="motivo" id="motivo" cols="50" rows="10"></textarea> 
+        <!-- INPUT TYPE SUBMIT -->
+         <br>
+         <input type="submit" value="Enviar">
+    </form>
+
+    <hr>
+
+    <h1>Formulario Login:</h1>
+    <form method="get">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="password">Constrasena</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <input type="submit" value="Entrar">
+        <input type="reset" value="Limpiar">
+    </form>
+
+    <hr>
+
+    <h1>Otros Inputs dispobibles</h1>
+
+    <form method="get">
+        <label for="color">Selecciona un color:</label>
+        <input type="color" name="color" id="color">
+        <br>
+
+        <label for="date">Selecciona una fecha:</label>
+        <input type="date" name="date" id="date">
+        <br>
+        
+        <label for="time">Selecciona una hora:</label>
+        <input type="time" name="time" id="time">
+        <br>
+        
+        <label for="number">Escribi un numero:</label>
+        <input type="number" name="number" id="number" min="1" max="5">
+        <br>
+        
+        <label for="range">Escribi un numero:</label>
+        <input type="range" name="range" id="range" min="1" max="5">
+        <br>
+        
+        <label for="file">Escribi un numero:</label>
+        <input type="file" name="file" id="file">
+
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
